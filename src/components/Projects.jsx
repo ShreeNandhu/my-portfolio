@@ -1,6 +1,37 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+// Import images from assets (so Vite processes them)
+import RVA1 from "/src/assets/ProjectImg/RVA/image1.png";
+import RVA2 from "/src/assets/ProjectImg/RVA/image2.png";
+import RVA3 from "/src/assets/ProjectImg/RVA/image3.png";
+import RVA4 from "/src/assets/ProjectImg/RVA/image4.png";
+import RVA5 from "/src/assets/ProjectImg/RVA/image5.png";
+import RVA6 from "/src/assets/ProjectImg/RVA/image6.png";
+
+import AMS1 from "/src/assets/ProjectImg/AMS/img1.png";
+import AMS2 from "/src/assets/ProjectImg/AMS/img2.png";
+import AMS3 from "/src/assets/ProjectImg/AMS/img3.png";
+import AMS4 from "/src/assets/ProjectImg/AMS/img4.png";
+import AMS5 from "/src/assets/ProjectImg/AMS/img5.png";
+import AMS6 from "/src/assets/ProjectImg/AMS/img6.png";
+import AMS7 from "/src/assets/ProjectImg/AMS/img7.png";
+import AMS8 from "/src/assets/ProjectImg/AMS/img8.png";
+import AMS9 from "/src/assets/ProjectImg/AMS/img9.png";
+
+import IC1 from "/src/assets/ProjectImg/IC/1.png";
+import IC2 from "/src/assets/ProjectImg/IC/2.png";
+import IC3 from "/src/assets/ProjectImg/IC/3.png";
+import IC4 from "/src/assets/ProjectImg/IC/4.png";
+
+import WA1 from "/src/assets/ProjectImg/WA/1.png";
+import WA2 from "/src/assets/ProjectImg/WA/2.png";
+
+import RA1 from "/src/assets/ProjectImg/RA/1.png";
+import RA2 from "/src/assets/ProjectImg/RA/2.png";
+import RA3 from "/src/assets/ProjectImg/RA/3.png";
+import RA4 from "/src/assets/ProjectImg/RA/4.png";
+
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -11,35 +42,17 @@ export default function Projects() {
       desc: "A digital learning platform empowering 10th and 12th grade students in remote villages with study materials, online exams, and evaluation — inspiring confidence to excel in competitive exams.",
       gitLink: "https://github.com/ShreeNandhu/Remote-Village-App.git",
       liveLink: "https://remotevillage2023-25.web.app/",
-      images: [
-        "/src/assets/ProjectImg/RVA/image1.png",
-        "/src/assets/ProjectImg/RVA/image2.png",
-        "/src/assets/ProjectImg/RVA/image3.png",
-        "/src/assets/ProjectImg/RVA/image4.png",
-        "/src/assets/ProjectImg/RVA/image5.png",
-        "/src/assets/ProjectImg/RVA/image6.png",
-      ],
+      images: [RVA1, RVA2, RVA3, RVA4, RVA5, RVA6],
       techStack: [
         { name: "React", icon: "/icons/react.svg" },
-        { name: "Firebase", icon: "icons/firebase.svg" },
+        { name: "Firebase", icon: "/icons/firebase.svg" },
       ],
     },
     {
       title: "Airline Management",
       desc: "Airline Management — book tickets, cancel tickets, view tickets, and select seats.",
       gitLink: "https://github.com/ShreeNandhu/AMS.git",
-
-      images: [
-        "/src/assets/ProjectImg/AMS/img1.png",
-        "/src/assets/ProjectImg/AMS/img2.png",
-        "/src/assets/ProjectImg/AMS/img3.png",
-        "/src/assets/ProjectImg/AMS/img4.png",
-        "/src/assets/ProjectImg/AMS/img5.png",
-        "/src/assets/ProjectImg/AMS/img6.png",
-        "/src/assets/ProjectImg/AMS/img7.png",
-        "/src/assets/ProjectImg/AMS/img8.png",
-        "/src/assets/ProjectImg/AMS/img9.png",
-      ],
+      images: [AMS1, AMS2, AMS3, AMS4, AMS5, AMS6, AMS7, AMS8, AMS9],
       techStack: [
         { name: "Java", icon: "/icons/java.svg" },
         { name: "Spring Boot", icon: "/icons/spring.svg" },
@@ -51,41 +64,26 @@ export default function Projects() {
       title: "Instagram Clone",
       desc: "Instagram Clone — share photos, like posts, comment, follow users, and view feeds in real-time.",
       gitLink: "https://github.com/ShreeNandhu/Insta-Clone.git",
-      images: [
-        "/src/assets/ProjectImg/IC/1.png",
-        "/src/assets/ProjectImg/IC/2.png",
-        "/src/assets/ProjectImg/IC/3.png",
-        "/src/assets/ProjectImg/IC/4.png",
-      ],
+      images: [IC1, IC2, IC3, IC4],
       techStack: [
         { name: "React", icon: "/icons/react.svg" },
-        { name: "Firebase", icon: "icons/firebase.svg" },
+        { name: "Firebase", icon: "/icons/firebase.svg" },
       ],
     },
     {
       title: "Weather App",
       desc: "Weather App — view current conditions, forecasts, and search by location with live updates.",
       gitLink: "https://github.com/ShreeNandhu/weather-forecast.git",
-
-      images: [
-        "/src/assets/ProjectImg/WA/1.png",
-        "/src/assets/ProjectImg/WA/2.png",
-      ],
+      images: [WA1, WA2],
       techStack: [{ name: "React", icon: "/icons/react.svg" }],
     },
     {
       title: "Recipe App",
       desc: "Recipe App — browse, search, and save recipes with ingredients and step-by-step instructions.",
       gitLink: "https://github.com/ShreeNandhu/recipe-app.git",
-      images: [
-        "/src/assets/ProjectImg/RA/1.png",
-        "/src/assets/ProjectImg/RA/2.png",
-        "/src/assets/ProjectImg/RA/3.png",
-        "/src/assets/ProjectImg/RA/4.png",
-      ],
+      images: [RA1, RA2, RA3, RA4],
       techStack: [{ name: "React", icon: "/icons/react.svg" }],
     },
-    // ...other projects
   ];
 
   const handleNextImage = () => {
@@ -152,7 +150,6 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Modal */}
       {selectedProject && (
         <div
           className="modal show fade"
@@ -179,7 +176,6 @@ export default function Projects() {
               <div className="modal-body text-center">
                 <p>{selectedProject.desc}</p>
 
-                {/* Links */}
                 <div className="mb-3 d-flex flex-wrap justify-content-center gap-2">
                   <a
                     href={selectedProject.gitLink}
@@ -214,7 +210,7 @@ export default function Projects() {
                       borderRadius: "50%",
                       backgroundColor: selectedProject.liveLink
                         ? "#059669"
-                        : "#6b7280", // green if active, gray if disabled
+                        : "#6b7280",
                       pointerEvents: selectedProject.liveLink ? "auto" : "none",
                       opacity: selectedProject.liveLink ? 1 : 0.5,
                     }}
@@ -227,7 +223,6 @@ export default function Projects() {
                   </a>
                 </div>
 
-                {/* Image Carousel */}
                 <div className="position-relative d-inline-block w-100">
                   <img
                     src={selectedProject.images[currentImageIndex]}
@@ -255,7 +250,6 @@ export default function Projects() {
                   </button>
                 </div>
 
-                {/* Tech stack */}
                 <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
                   {selectedProject.techStack.map((tech, i) => (
                     <div key={i} className="text-center">
@@ -274,7 +268,6 @@ export default function Projects() {
         </div>
       )}
 
-      {/* Styles */}
       <style>
         {`
           .section-card {
@@ -289,11 +282,10 @@ export default function Projects() {
             .modal-dialog {
               max-width: 95% !important;
               margin: auto;
-              
             }
-              .modal-body {
-              overflow-x: hidden; /* Hide horizontal scroll */
-             }
+            .modal-body {
+              overflow-x: hidden;
+            }
             .modal-body img {
               width: 100% !important;
               height: auto !important;
