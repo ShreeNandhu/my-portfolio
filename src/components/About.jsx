@@ -43,7 +43,7 @@ export default function About() {
               </h4>
               <div className="d-flex align-items-center mb-3">
                 <img
-                  src="./src/assets/anna.jpg"
+                  src="./anna.jpg"
                   alt="Anna University"
                   style={{
                     width: "50px",
@@ -60,7 +60,7 @@ export default function About() {
               </div>
               <div className="d-flex align-items-center">
                 <img
-                  src="./src/assets/bishop.jpg"
+                  src="./bishop.jpg"
                   alt="Bishop Heber College"
                   style={{
                     width: "50px",
