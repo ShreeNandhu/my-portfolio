@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import NandhuImg from './src/assets/Nandhu.jpg';
+import NandhuImg from '/Nandhu.jpg';
 
 export default function Hero() {
   return (
