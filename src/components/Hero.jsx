@@ -1,4 +1,5 @@
 import { ReactTyped } from "react-typed";
+import NandhuImg from './src/assets/Nandhu.jpg';
 
 export default function Hero() {
   return (
@@ -61,7 +62,7 @@ export default function Hero() {
               className="mx-auto"
             >
               <img
-                src="./src/assets/Nandhu.jpg"
+                src={NandhuImg}
                 alt="Nandhu"
                 style={{
                   width: "100%",
