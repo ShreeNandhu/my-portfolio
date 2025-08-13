@@ -1,0 +1,36 @@
+.skills-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* hides overflow so icons loop smoothly */
+  background: #3b3b3b; /* or transparent */
+  padding: 20px 0;
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee-right 20s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* spacing between icons */
+}
+
+.marquee-item img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Animation to move icons left continuously */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%); /* start shifted left */
+  }
+  100% {
+    transform: translateX(0); /* move right to original */
+  }
+}
+

@@ -1,0 +1,31 @@
+#projects {
+  padding: 2rem;
+}
+
+.project-folder {
+  cursor: pointer;
+  padding: 0.5rem;
+  background: #ff9800;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.project-folder:hover {
+  background: #e68900;
+}
+
+.project-details {
+  padding: 1rem;
+  background: #222;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.project-images img {
+  max-width: 200px;
+  margin: 5px;
+  border-radius: 4px;
+}

@@ -1,0 +1,65 @@
+.certificates-container {
+  overflow: hidden;
+  background: #111;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: flex;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.cert-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.cert-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cert-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Pause animation on hover */
+.certificates-container:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* Modal */
+.modal-overlay {
+  padding-top: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
