@@ -134,7 +134,7 @@ export default function Projects() {
                 onClick={() => openProject(project)}
               >
                 <img
-                  src="./src/assets/folder.svg"
+                  src="/icons/folder.svg"
                   alt={project.title}
                   style={{
                     width: "80px",
